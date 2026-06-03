@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slow Fashion Notes | Handwerk & Alltag</title>
+    <title>Slow Fashion Notes | Aesthetics & Craft</title>
     <style>
         :root { --soft-pink: #fdf2f2; --ink: #2d2d2d; --accent: #c4a484; }
         body { font-family: 'Georgia', serif; color: var(--ink); background: var(--soft-pink); margin: 0; padding: 2rem; }
-        .container { max-width: 700px; margin: 0 auto; }
+        .container { max-width: 800px; margin: 0 auto; }
         header { text-align: center; margin: 4rem 0; }
-        article { margin-bottom: 5rem; }
-        .date { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        h2 { margin: 0.5rem 0; font-weight: normal; }
-        .content-img { width: 100%; height: auto; margin: 1.5rem 0; border-radius: 4px; }
-        .inline-link { color: var(--accent); text-decoration: underline; }
+        .post-card { background: white; padding: 2rem; margin-bottom: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .meta { font-size: 0.85rem; color: var(--accent); margin-bottom: 1rem; }
+        .comment-section { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.9rem; }
+        .comment { margin-bottom: 0.5rem; }
+        img { width: 100%; height: 300px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem; }
     </style>
 </head>
 <body>
@@ -23,80 +23,33 @@
             <p>Einblicke in Handwerk, Nachhaltigkeit und das Coquette-Leben.</p>
         </header>
 
-        <!-- Blog Entry 1 -->
-        <article>
-            <span class="date">15. Mai 2026</span>
-            <h2>Warum wir Stoffreste lieben</h2>
-            <p>Es beginnt mit einem Fundstück. In unseren Ateliers in Vietnam landen oft wertvolle Stoffstücke, die in der Massenproduktion aussortiert wurden. Anstatt sie zu entsorgen, wählen wir sie mit Bedacht aus.</p>
-            <img src="assets/quilt-detail.jpg" alt="Stoffdetail" class="content-img">
-            <p>Diese <span class="inline-link"><a href="https://floralbyhand.com/de/products/coquette-pouch">kleinen Pouches</a></span> entstehen aus genau dieser Philosophie – sie sind ein Statement gegen die Wegwerfkultur.</p>
-        </article>
+        <!-- Template for blog posts -->
+        <div id="blog-posts">
+            <article class="post-card">
+                <div class="meta">15. Mai 2026 | Handwerk</div>
+                <h2>Warum wir Stoffreste lieben</h2>
+                <img src="https://images.unsplash.com/photo-1596704017254-9b5c10898e4d?auto=format&fit=crop&q=80&w=800" alt="Stoffdetail">
+                <p>Es beginnt mit einem Fundstück. In unseren Ateliers in Vietnam landen oft wertvolle Stoffstücke, die in der Massenproduktion aussortiert wurden. Anstatt sie zu entsorgen, wählen wir sie mit Bedacht aus...</p>
+                <a href="post1.html" style="color:var(--accent)">Weiterlesen...</a>
+                <div class="comment-section">
+                    <strong>Kommentare:</strong>
+                    <div class="comment"><em>Marie:</em> Wunderschöner Ansatz, das macht die Pouches noch wertvoller!</div>
+                </div>
+            </article>
 
-        <!-- Blog Entry 2 -->
-        <article>
-            <span class="date">12. Mai 2026</span>
-            <h2>Die Kunst des Stickens</h2>
-            <p>Stickerei ist für uns eine meditative Arbeit. Jede Naht wird per Hand gesetzt. Wenn man genau hinsieht, erkennt man die Handschrift der jeweiligen Handwerkerin.</p>
-            <p>Es ist diese Unvollkommenheit, die unsere Designs so besonders macht. Wer den Prozess dahinter schätzt, findet in unserem <a href="https://floralbyhand.com/de" class="inline-link">Shop</a> vielleicht genau das richtige Stück.</p>
-        </article>
-
-        <!-- Blog Entry 3 -->
-        <article>
-            <span class="date">8. Mai 2026</span>
-            <h2>Minimalismus trifft Coquette</h2>
-            <p>Pastellfarben und weiche Formen müssen nicht bedeuten, dass man den Überblick verliert. Wir lieben den Kontrast zwischen Ordnung und verspieltem Design.</p>
-            <img src="assets/flatlay.jpg" alt="Flatlay" class="content-img">
-        </article>
-
-        <!-- Blog Entry 4 -->
-        <article>
-            <span class="date">3. Mai 2026</span>
-            <h2>Ein Nachmittag im Atelier</h2>
-            <p>Licht ist unsere wichtigste Zutat. Die Fenster in unserem Atelier lassen die Vormittagssonne genau auf die Arbeitstische fallen.</p>
-        </article>
-
-        <!-- Blog Entry 5 -->
-        <article>
-            <span class="date">28. April 2026</span>
-            <h2>Pflege deiner Taschen</h2>
-            <p>Gesteppte Taschen halten ein Leben lang, wenn man sie richtig behandelt. Wir empfehlen eine schonende Handwäsche.</p>
-        </article>
-
-        <!-- Blog Entry 6 -->
-        <article>
-            <span class="date">20. April 2026</span>
-            <h2>Die Farben des Frühlings</h2>
-            <p>Unsere neue Farbpalette ist inspiriert von den Blumen, die wir auf dem Markt in Hanoi gefunden haben.</p>
-        </article>
-
-        <!-- Blog Entry 7 -->
-        <article>
-            <span class="date">15. April 2026</span>
-            <h2>Nachhaltigkeit ist kein Trend</h2>
-            <p>Wir arbeiten seit Tag eins mit den gleichen Familien zusammen. Fairness ist bei uns kein Marketing-Begriff.</p>
-        </article>
-
-        <!-- Blog Entry 8 -->
-        <article>
-            <span class="date">10. April 2026</span>
-            <h2>Warum Baumwolle?</h2>
-            <p>Wir verwenden nur die hochwertigsten Naturfasern, damit sich unsere Produkte nicht nur gut anfühlen, sondern auch atmen können.</p>
-        </article>
-
-        <!-- Blog Entry 9 -->
-        <article>
-            <span class="date">5. April 2026</span>
-            <h2>Reisen mit Herz</h2>
-            <p>Egal ob für den Urlaub oder den Alltag: Die perfekte Tasche macht den Unterschied.</p>
-            <img src="assets/travel.jpg" alt="Reisebild" class="content-img">
-        </article>
-
-        <!-- Blog Entry 10 -->
-        <article>
-            <span class="date">1. April 2026</span>
-            <h2>Danke für das Feedback</h2>
-            <p>Ihr habt uns so viele liebe Nachrichten zu unseren Stickereien geschrieben. Das motiviert uns jeden Tag aufs Neue.</p>
-        </article>
+            <article class="post-card">
+                <div class="meta">12. Mai 2026 | Design</div>
+                <h2>Die Kunst des Stickens</h2>
+                <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800" alt="Stickerei">
+                <p>Stickerei ist für uns eine meditative Arbeit. Jede Naht wird per Hand gesetzt. Wir haben die Designs entworfen, um diesen weichen, "Coquette"-Stil mit der Beständigkeit von Handarbeit zu verbinden.</p>
+                <a href="post2.html" style="color:var(--accent)">Weiterlesen...</a>
+                <div class="comment-section">
+                    <strong>Kommentare:</strong>
+                    <div class="comment"><em>Julia:</em> Ich liebe meine Pouch, man sieht die Liebe zum Detail wirklich!</div>
+                    <div class="comment"><em>Sarah:</em> Habt ihr noch mehr Farben geplant?</div>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 </html>
